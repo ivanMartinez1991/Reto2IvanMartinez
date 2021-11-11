@@ -1,0 +1,37 @@
+SELECT * FROM MESSAGE
+
+BEGIN
+INSERT INTO MESSAGE (ID, MESSAGETEXT) VALUES (:id, :messagetext);
+:status_code:=201;
+
+END;
+
+BEGIN
+UPDATE MESSAGE SET MESSAGETEXT=:messagetext WHERE ID =:id;    
+:status_code :=201;
+END;
+
+BEGIN
+DELETE FROM MESSAGE WHERE ID= :id ;
+:status_code :=204;
+END;
+
+
+SELECT * FROM CLIENT
+
+BEGIN
+INSERT INTO CLIENT (ID, NAME, EMAIL, AGE) VALUES (:id, :name,:email, :age);
+:status_code:=201;
+
+END;
+
+BEGIN
+ UPDATE CLIENT SET NAME=:name, EMAIL=:email, AGE=:age WHERE ID=:id;
+ status_code:=201;
+
+END;
+
+BEGIN
+DELETE FROM CLIENT WHERE ID= :id ;
+:status_code :=204;
+END;

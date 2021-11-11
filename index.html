@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Partyroom</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="Funciones.js"></script>
+</head>
+
+<body>
+
+<h1> Clientes </h1>
+<div id="datos"></div>
+<button onclick="obtenerCliente()">VER</button>
+<button onclick="guardarCliente()">GUARDAR</button>
+<button onclick="actuaCliente()">ACTUALIZAR</button>
+
+<div>
+    <input type="number" id="id" placeholder="ID:">
+	<input type="text" id="name" placeholder="NAME:">
+	<input type="text" id="email" placeholder="EMAIL:">
+	<input type="number" id="age" placeholder="AGE:">
+
+</div>
+
+<h1> Salones </h1>
+<div id="salon"></div>
+<button onclick="obtenerSala()">VER</button>
+<button onclick="guardarSala()">GUARDAR</button>
+<button onclick="actualizaSala()">ACTUALIZAR</button>
+
+<div>
+    <input type="number" id="idsala" placeholder="ID:">
+	<input type="text" id="owner" placeholder="OWNER:">
+	<input type="number" id="capacity" placeholder="CAPACITY:">
+	<input type="number" id="category_id" placeholder="CATEGORY_ID:">
+	<input type="text" id="namesala" placeholder="NAME:">
+
+</div>
+
+<h1> Mensajes </h1>
+<div id="mensajes"></div>
+<button onclick="obtenerMensaje()">VER</button>
+<button onclick="guardarMensaje()">GUARDAR</button>
+<button onclick="actuaMensaje()">ACTUALIZAR</button>
+
+<div>
+    <input type="number" id="idMensaje" placeholder="ID:">
+	<input type="text" id="messagetext" placeholder="MESSAGETEXT:">
+	
+
+</div>
+</body>
+
+
+	
+</html>
